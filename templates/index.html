@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<meta charset="UTF-8">
+    <title>Aqui comienza el proyecto</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet"type="text/css" href=" {{url_for('static',filename='CSS/style.css')}}">
      <link rel="stylesheet"type="text/css" href=" {{url_for('static',filename='CSS/formulario.css')}}">
     <link rel="stylesheet"type="text/css" href=" {{url_for('static',filename='CSS/letra.css')}}">
@@ -12,14 +14,16 @@
 <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
 <!-- ANIMATE.CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <title>Aqui comienza el proyecto</title>
+
 
 </head>
 
 
+
 <body>
-<body>{% extends 'Base/navegador.html'%}</body>
-<!-- formulario-->
+
+{% extends 'Base/navegador.html'%}
+{%block conten%}
     <section class="form-register">
     <h4>Nuevo Registro</h4>
     <input class="controls" type="text" name="nombres" id="nombres"placeholder="Ingrese su Nombre">
@@ -30,6 +34,9 @@
     <input class="botons"type="submit"value="registrar">
     <p><a href="#">¿Ya Tengo Cuenta?</a> </p>
 </section>
+
+{%endblock%}
+<!-- formulario-->
 
 
 <!--esta pendiente
